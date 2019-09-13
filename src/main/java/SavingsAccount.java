@@ -11,7 +11,7 @@ public class SavingsAccount extends Account {
     public void chargeNewMonth() {
         monthlyWithdrawals = 0;
         if (monthlyDeposited < MIN_WAVE_FEE) {
-            mTotalFee -= MONTHLY_FEE;
+            mTotalFee += MONTHLY_FEE;
         }
         monthlyDeposited = 0;
     }
